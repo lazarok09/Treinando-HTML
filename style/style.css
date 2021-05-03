@@ -57,9 +57,9 @@ div.ambulance {
   width: 5px;
   height: 20px;
 }
+/*  --------------- */
 
 /* creates the road */
-
 div .road {
   background: black;
   width: 100%;
@@ -72,6 +72,15 @@ div .road div {
   width: 60px;
   height: 10px;
 }
+/*  --------------- */
+
+/* the audio player */
+#audio {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+/*  --------------- */
 
 /* animation description */
 div > span {
@@ -81,6 +90,7 @@ div > span {
   color: white;
   background: rgb(14, 14, 14);
 }
+/*  --------------- */
 
 /* ambulance keyframes rules */
 div .ambulance {
