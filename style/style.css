@@ -1,6 +1,8 @@
 body {
   background-color: gray;
 }
+
+/* creates the ambulance div */
 div {
   position: relative;
   top: 0;
@@ -55,11 +57,9 @@ div.ambulance {
   width: 5px;
   height: 20px;
 }
-div .ambulance {
-  animation-name: move-ambulance;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-}
+
+/* creates the road */
+
 div .road {
   background: black;
   width: 100%;
@@ -72,6 +72,31 @@ div .road div {
   width: 60px;
   height: 10px;
 }
+
+/* animation description */
+div > span {
+  font-weight: 800;
+  text-align: center;
+  padding: 2px;
+  color: white;
+  background: rgb(14, 14, 14);
+}
+
+/* ambulance keyframes rules */
+div .ambulance {
+  animation-name: move-ambulance;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+div .ambulance2 {
+  animation-timing-function: ease-out;
+}
+
+div .ambulance3 {
+  animation-timing-function: linear;
+}
+
 @keyframes move-ambulance {
   50% {
     left: 80%;
